@@ -1,0 +1,61 @@
+{
+  "name": "dsh-pane-find",
+  "version": "0.1.0",
+  "description": "DSH 页内查找与会话工具 · Ctrl+F 定位对话/侧栏内容，支持中文匹配、拖拽记忆位置、复制整条 / Find-in-page plugin for DeepSeek Harness: search conversations & sidebars with highlight, drag-to-move, session recall.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "find-in-page",
+    "search",
+    "ctrl-f",
+    "highlight",
+    "page-search",
+    "dsh",
+    "pane-find",
+    "lookup",
+    "text-search",
+    "session-tools"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "LICENSE",
+    "licenses",
+    "NOTICE.md",
+    "README.md"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24",
+    "dsh": ">=0.2.2-rc.5 <0.3.0-0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test test/*.test.mjs",
+    "test:browser": "node test/browser.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "playwright-core": "1.65.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-chat"
+      ]
+    }
+  }
+}
