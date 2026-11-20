@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "title": {
+    "en": "BioAIEvolu DSH Plugins",
+    "zh": "BioAIEvolu 的 DSH 插件合集"
+  },
+  "description": {
+    "en": "Find-in-page search and session tools for DeepSeek Harness.",
+    "zh": "DeepSeek Harness 的页内查找与会话工具。"
+  },
+  "metadata": {
+    "name": "BioAIEvolu DSH Plugins",
+    "categories": {
+      "tools": {
+        "title": {
+          "en": "Search & Tools",
+          "zh": "查找与工具"
+        }
+      }
+    },
+    "labels": {},
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "dsh-pane-find",
+      "title": {
+        "en": "Pane Find",
+        "zh": "分栏查找"
+      },
+      "description": {
+        "en": "Find-in-page search for DeepSeek Harness: locate text across conversation, sidebar and right panel with Ctrl+F, Chinese/English literal matching, highlight navigation, draggable panel with position memory, adaptive width, theme-aware colors, copy full message, and composer history recall.",
+        "zh": "DeepSeek Harness 页内查找：Ctrl+F 定位对话、侧栏与右栏的可见文本，中英文字面匹配，高亮导航，面板可拖拽并记忆位置，宽度随输入自适应，颜色跟随主题，复制整条消息，输入框历史取回。"
+      },
+      "icon": "https://raw.githubusercontent.com/BioAIEvolu/dsh-pane-find/main/docs/images/icon.svg",
+      "homepage": "https://github.com/BioAIEvolu/dsh-pane-find#readme",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/BioAIEvolu/dsh-pane-find.git"
+      },
+      "metadata": {
+        "category": "tools",
+        "keywords": [
+          "find-in-page",
+          "search",
+          "ctrl-f",
+          "highlight",
+          "lookup",
+          "find"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1795172981,
+          "source": {
+            "type": "npm",
+            "registry": "https://registry.npmjs.org/"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.5 <0.3.0-0"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>dsh-pane-find icon</title>
+  <rect x="4" y="10" width="56" height="34" rx="6" fill="#B5D4F4"/>
+  <rect x="10" y="18" width="36" height="6" rx="3" fill="#0C447C"/>
+  <rect x="10" y="28" width="26" height="6" rx="3" fill="#0C447C" opacity="0.55"/>
+  <circle cx="40" cy="36" r="12" fill="#FAC775" stroke="#633806" stroke-width="3"/>
+  <path d="M49 45 58 54" stroke="#633806" stroke-width="4" stroke-linecap="round"/>
+</svg>
